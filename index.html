@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visit Card</title>
+</head>
+<body>
+<SCRIPT type="text/javascript" language="JavaScript">
+    var name = prompt('Input name','');
+    var surname = prompt('Input surname','');
+    var address = prompt('Input address','');
+    var phone_number = prompt('Input your phone number','');
+    var visitcard = ' <TABLE width="100%" border="0">'
+        +' <TR>'
+        +' <TD align="CENTER" valign="CENTER">'
+        +' <IMG src="btr.jpg" width="220px", height="120px">'
+        +' </TD>'
+        +' <TD align="CENTER">'
+        +' <B>' + name + '</B><BR>'
+        +' <I>' + surname + '</I><BR>'
+        +' <FONT class="darkpurple1" color="#9932cc"><b>' + address + '</b><br></FONT>'
+        +' <FONT class="golden1" color="gold">' + phone_number + '</FONT>'
+        +' </TD>'
+        +' </TR>'
+        +' </TABLE>';
+    document.write('<TABLE width="100%" border="1" align="CENTER">');
+    for(var y=0; y<12; y++)
+    {
+        document.write('<TR>');
+        for(var x=0; x<3; x++)
+        {
+            document.write( '<TD align="CENTER" style="border-style: dashed; borderwidth:thin;">');
+            document.write( visitcard );
+            document.write('</TD>');
+        }
+        document.write('</TR>');
+    }
+    document.write('</TABLE>');
+</SCRIPT>
+<style>
+    *{
+        font-style: normal;
+        font-family: "Comic Sans MS",serif ;
+        font-size: 16px;
+    }
+    .darkpurple1{
+        border-radius: 5px;
+        background: gold;
+    }
+    .golden1{
+        border-radius: 5px;
+        background: #9932cc;
+    }
+</style>
+</body>
+</html>
